@@ -1,53 +1,54 @@
 # mcpTools
 
-This project is a sample solution that contains a console application built with .NET 8.
+This repository contains a .NET 8 solution with two main projects: a console application named Client and a utility project named RestArchitectureTools.
 
 ## Project Structure
 
 ```
 mcpTools
 ├── mcpTools.sln
-├── ConsoleApp
-│   ├── ConsoleApp.csproj
+├── Client
+│   ├── Client.csproj
 │   └── Program.cs
+├── RestArchitectureTools
+│   ├── RestArchitectureTools.csproj
+│   ├── Program.cs
+│   └── ...
 └── README.md
 ```
 
 ## Getting Started
 
-To build and run the console application, follow these steps:
+To build and run the solution, follow these steps:
 
-1. **Clone the repository**:
+1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/mcpTools.git
+   git clone https://github.com/ahmetbabalii/mcpTools.git
    cd mcpTools
    ```
 
-2. **Open the solution**:
-   Open the `mcpTools.sln` file in your preferred IDE or editor.
+2. **Open the solution:**
+   Open `mcpTools.sln` in your preferred IDE or editor.
 
-3. **Restore dependencies**:
-   Run the following command to restore the project dependencies:
+3. **Restore dependencies:**
    ```
    dotnet restore
    ```
 
-4. **Build the project**:
-   To build the console application, use the following command:
+4. **Build the projects:**
    ```
-   dotnet build ConsoleApp/ConsoleApp.csproj
+   dotnet build
    ```
 
-5. **Run the application**:
-   Execute the console application with the following command:
+5. **Run the console application:**
    ```
-   dotnet run --project ConsoleApp/ConsoleApp.csproj
+   dotnet run --project Client/Client.csproj
    ```
 
 ## Contributing
 
-If you would like to contribute to this project, please fork the repository and submit a pull request.
+Feel free to fork the repository and submit a pull request for any improvements or bug fixes.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the LICENSE file for details.
