@@ -1,6 +1,6 @@
 # mcpTools
 
-This repository contains a .NET 8 solution with two main projects: a console application named Client and a utility project named RestArchitectureTools.
+This repository contains a .NET 8 solution with two main projects: a console application named Client and a utility project named RestArchitectureTools (which acts as an MCP server).
 
 ## Project Structure
 
@@ -16,6 +16,12 @@ mcpTools
 │   └── ...
 └── README.md
 ```
+
+## Reference
+
+This project is inspired by and references the official [Model Context Protocol C# SDK](https://github.com/modelcontextprotocol/csharp-sdk).
+
+You can explore the SDK for more advanced usage, integration patterns, and up-to-date protocol implementations.
 
 ## Getting Started
 
@@ -44,6 +50,33 @@ To build and run the solution, follow these steps:
    ```
    dotnet run --project Client/Client.csproj
    ```
+
+## Testing MCP Tools with MCP Inspector
+
+You can test the tools provided by the RestArchitectureTools project (MCP server) using the [MCP Inspector](https://www.npmjs.com/package/@modelcontextprotocol/inspector), a web-based UI for interacting with MCP servers.
+
+### Steps:
+
+1. **Install Node.js** (if not already installed):
+   - Download and install from [https://nodejs.org/](https://nodejs.org/)
+
+2. **Navigate to the RestArchitectureTools directory:**
+   ```
+   cd RestArchitectureTools
+   ```
+
+3. **Start the MCP Inspector and the server:**
+   ```
+   npx @modelcontextprotocol/inspector dotnet run
+   ```
+   This command will build and launch the RestArchitectureTools MCP server and open the Inspector UI in your browser.
+
+4. **Connect and test tools:**
+   - In the Inspector UI, click the `Connect` button.
+   - Go to the `List Tools` tab to see all available tools.
+   - Select and test each tool interactively.
+
+> The Inspector allows you to send parameters, execute tools, and observe responses in real time—similar to how Postman is used for REST APIs.
 
 ## Contributing
 
